@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+.page-title {
+  padding: 2rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+}
+
+
+.timeline-divider {
+  width: 2px;
+  background-color: #aaa;
+  margin: 0 1rem;
+}
+
+
+.timeline-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  align-items: center;
+}
+
+
+.timeline-item {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.timeline-item.image {
+  background-color: #eaeaff;
+}
+
+.timeline-item.text {
+  background-color: #fff;
+}
