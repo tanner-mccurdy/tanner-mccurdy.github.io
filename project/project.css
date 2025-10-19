@@ -1,4 +1,4 @@
-
+/* default styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +7,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fefefe;
   line-height: 1.6;
+  background-color: #fefefe;
 }
+
 
 header {
   display: flex;
@@ -46,6 +47,61 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
+/* index */
+.hero {
+  height: 100vh; 
+  width: 100vw;  
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+
+.overview {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* food */
+
+/* places */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+}
+
+.grid-item {
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #eaeaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-item.text {
+  background-color: #fff;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+/* timeline */
 .timeline-container {
   display: flex;
   justify-content: center;
