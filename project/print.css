@@ -1,0 +1,8 @@
+nav, footer, .ads {
+  display: none;
+}
+body {
+  font-size: 12pt;
+  color: #000;
+  background: #fff;
+}

@@ -38,7 +38,6 @@ nav {
   font-weight: bold;
   list-style-type: none;
   padding: 1% 0%;
-  border-left: 
 }
 
 #navmain ul li {
@@ -75,8 +74,8 @@ footer {
 
 /* index */
 .hero {
-  height: 100vh; 
-  width: 100vw;  
+  height: 100%; 
+  width: 100%;  
   overflow: hidden;
 }
 
@@ -99,12 +98,20 @@ footer {
 }
 
 /* food */
+  /* food cards */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+}
 
 /* places */
+  /* Planning to change to clickable cards that go into more details of each place. */
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2,1fr);
   gap: 2rem;
   padding: 0 2rem 2rem;
 }
@@ -170,4 +177,31 @@ footer {
 
 .timeline-item.text {
   background-color: #fff;
+}
+
+/* Responsive Design */
+  /* Phone */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+  /* Tablet */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+    margin: 10px;
+  }
+}
+
+  /* Desktop */
+@media (min-width: 1200px) {
+  body {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
