@@ -196,6 +196,26 @@ footer {
     font-size: 0.9em;
     margin: 10px;
   }
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-divider {
+    display: none; /* hide vertical line for mobile */
+  }
+
+  .timeline-column {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    width: 90%;
+    height: auto; /* let content dictate height */
+    padding: 1rem;
+  }
 }
 
   /* Desktop */
