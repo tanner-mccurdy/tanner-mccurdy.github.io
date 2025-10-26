@@ -1,4 +1,6 @@
-/* default styles */
+/* =======================
+   DEFAULT STYLES
+======================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +13,9 @@ body {
   background-color: #fefefe;
 }
 
-
+/* =======================
+   HEADER & NAVIGATION
+======================= */
 header {
   display: flex;
   justify-content: space-between;
@@ -19,10 +23,11 @@ header {
   padding: 2px 10px;
   background-color: #f9f9f9b0; /* semi-transparency */
   border-bottom: 1px solid #ddd;
-  position: sticky; /* makes header stick to top */
+  position: sticky;
   top: 0;
   left: 0;
-  z-index: 100; /* ensures header stays on top */
+  z-index: 100;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -35,19 +40,23 @@ nav {
   text-transform: uppercase;
 }
 
+#navmain {
+  display: block; /* desktop default */
+}
+
 #navmain ul {
+  display: flex; /* horizontal nav for desktop */
   font-weight: bold;
-  list-style-type: none;
-  padding: 1% 0%;
+  list-style: none;
+  padding: 1% 0;
+  margin: 0;
 }
 
 #navmain ul li {
-  display: inline;
-  margin-right: 1px;
+  margin-right: 2rem;
 }
 
 nav a {
-  margin-left: 2rem;
   text-decoration: none;
   color: #333;
 }
@@ -58,6 +67,57 @@ nav a:hover {
   transition: 0.5s;
 }
 
+/* Hamburger menu button */
+.nav-toggle {
+  display: none; /* hidden on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  position: relative;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(8px);
+}
+
+/* active hamburger */
+.nav-toggle.active .hamburger {
+  background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active .hamburger::after {
+  transform: rotate(-45deg);
+}
+
+/* =======================
+   PAGE CONTENT
+======================= */
 .page-title {
   padding: 5px;
   text-align: left;
@@ -65,28 +125,26 @@ nav a:hover {
 }
 
 footer {
-    background-color: #ffffff;
-    font-size: .60em;
-    font-style: italic;
-    text-align: center;
-    padding-bottom: 1em;
-    border-top: 2px solid #000000;
+  background-color: #ffffff;
+  font-size: .60em;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 1em;
+  border-top: 2px solid #000000;
 }
 
-/* index */
 .hero {
-  height: 100%; 
-  width: 100%;  
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
 }
-
 
 .overview {
   padding: 10px 20px;
@@ -98,8 +156,7 @@ footer {
   text-align: center;
 }
 
-/* food */
-  /* food cards */
+/* FOOD GRID */
 .food-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -107,12 +164,10 @@ footer {
   padding: 0 2rem 2rem;
 }
 
-/* places */
-  /* Planning to change to clickable cards that go into more details of each place. */
-
+/* PLACES GRID */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 0 2rem 2rem;
 }
@@ -135,8 +190,7 @@ footer {
   padding: 1rem;
 }
 
-
-/* timeline */
+/* TIMELINE */
 .timeline-container {
   display: flex;
   justify-content: center;
@@ -144,13 +198,11 @@ footer {
   padding: 0 2rem 2rem;
 }
 
-
 .timeline-divider {
   width: 2px;
   background-color: #aaa;
   margin: 0 1rem;
 }
-
 
 .timeline-column {
   display: flex;
@@ -159,7 +211,6 @@ footer {
   flex: 1;
   align-items: center;
 }
-
 
 .timeline-item {
   width: 300px;
@@ -180,67 +231,59 @@ footer {
   background-color: #fff;
 }
 
-/* Responsive Design */
-  /* Phone */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-    /* logo */
-  .logo {
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-  }
-    /*nav */
-   nav a {
-    margin: 0 10px 5px 0;
-    display: inline-block;
-    font-size: 1rem;
-  }
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
 
-  #navmain ul {
-    padding: 0;
-  }  
-    /* timeline */
-  .timeline-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .timeline-divider {
-    display: none; /* hide vertical line for mobile */
-  }
-
-  .timeline-column {
-    flex-direction: column;
-    width: 100%;
-    gap: 1.5rem;
-  }
-
-  .timeline-item {
-    width: 90%;
-    height: auto; /* let content dictate height */
-    padding: 1rem;
-  }
-}
-
-  /* Tablet */
+/* Tablet (up to 768px) */
 @media (max-width: 768px) {
   body {
     font-size: 0.9em;
     margin: 10px;
   }
-    /* timeline */
+  /* nav */
+  .nav-toggle {
+    display: block;
+    z-index: 200;
+  }
+
+  #navmain {
+    display: none;
+  }
+
+  #navmain.active {
+    display: block;
+  }
+
+  #navmain ul {
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+
+  #navmain ul li {
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  #navmain ul li a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+  }
+
+  #navmain ul li a:hover {
+    background-color: #f1f1f1;
+  }
+  /* timeline */
   .timeline-container {
     flex-direction: column;
     align-items: center;
   }
 
   .timeline-divider {
-    display: none; /* hide vertical line for mobile */
+    display: none;
   }
 
   .timeline-column {
@@ -251,12 +294,60 @@ footer {
 
   .timeline-item {
     width: 90%;
-    height: auto; /* let content dictate height */
+    height: auto;
     padding: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
 
-  /* Desktop */
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .nav-toggle {
+    display: block; /* show hamburger on mobile */
+    z-index: 200;
+  }
+
+  #navmain.active {
+    display: block;
+  }
+
+  #navmain ul {
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+
+  #navmain ul li {
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  #navmain ul li a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+  }
+
+  #navmain ul li a:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+/* Desktop container max width */
 @media (min-width: 1200px) {
   body {
     margin: 0 auto;

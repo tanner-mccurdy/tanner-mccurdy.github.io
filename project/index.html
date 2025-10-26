@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Ensures proper rendering and touch zooming on mobile devices -->
-  <title>Vietnam</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--Ensures proper rendering and touch zooming on mobile devices-->
+<title>Vietnam</title>
 
-  <link rel="icon" href="flag.ico"/>
-  <link rel="stylesheet" href="project.css"/>
-  <link rel="stylesheet" href="print.css" media="print">
+<link rel="icon" href="flag.ico"/>
+<link rel="stylesheet" href="project.css"/>
+<link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
 
-  <header>
-    <div class="logo">Logo</div>
-    <nav id ="navmain">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="places_to_visit.html">Places to Visit</a></li>
-        <li><a href="food_to_try.html">Food to Try</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="page-title">
-    <h1>Vietnam</h1>
-  </section>
+<header>
+  <div class="logo">Logo</div>
+  <button class ="nav-toggle" aria-label="Toggle Navigation">
+    <span class="hamburger"></span>
+  </button>
+  <nav id ="navmain">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="places_to_visit.html">Places to Visit</a></li>
+      <li><a href="food_to_try.html">Food to Try</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="page-title">
+  <h1>Vietnam</h1>
+</section>
 
-  <div class="hero">
-    <img src="images/Vietnam.jpeg" alt="Beautiful View of Vietnam" />
-  </div>
+<div class="hero">
+  <img src="images/Vietnam.jpeg" alt="Beautiful View of Vietnam"/>
+</div>
 
-  <section class="overview">
-    <h2>Overview</h2>
-    <p>
-      Vietnam, officially the Socialist Republic of Vietnam, is a country in Southeast Asia. It is known for its rich history, diverse culture, stunning landscapes, and delicious cuisine. From the bustling streets of Hanoi to the serene beaches of Da Nang, Vietnam offers a unique blend of tradition and modernity that captivates travelers from around the world.
-    </p>
-  </section>
+<section class="overview">
+  <h2>Overview</h2>
+  <p>
+    Vietnam, officially the Socialist Republic of Vietnam, is a country in Southeast Asia. It is known for its rich history, diverse culture, stunning landscapes, and delicious cuisine. From the bustling streets of Hanoi to the serene beaches of Da Nang, Vietnam offers a unique blend of tradition and modernity that captivates travelers from around the world.
+  </p>
+</section>
 
-  <footer>
-      Copyright &copy; 2025 Explore the World<br/><a
-        href="tanner@mccurdy.com"
-        >tanner@mccurdy.com</a
-      >
-    </footer>  
+<footer>
+    Copyright &copy; 2025 Explore the World<br/><a
+      href="tanner@mccurdy.com"
+      >tanner@mccurdy.com</a
+    >
+  </footer> 
+    
+<script>
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('#navmain');
+
+navToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  navToggle.classList.toggle('active');
+});
+</script>
+
 
 </body>
 </html>
