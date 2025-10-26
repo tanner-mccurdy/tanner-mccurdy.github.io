@@ -41,7 +41,7 @@ nav {
 }
 
 #navmain {
-  display: block; /* desktop default */
+  display: flex; /* desktop default */
 }
 
 #navmain ul {
