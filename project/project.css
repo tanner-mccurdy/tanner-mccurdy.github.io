@@ -28,6 +28,7 @@ header {
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
+  margin-right: 20px;
 }
 
 nav {
@@ -188,6 +189,42 @@ footer {
   .grid-container {
     grid-template-columns: 1fr;
   }
+    /* logo */
+  .logo {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+    /*nav */
+   nav a {
+    margin: 0 10px 5px 0;
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  #navmain ul {
+    padding: 0;
+  }  
+    /* timeline */
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-divider {
+    display: none; /* hide vertical line for mobile */
+  }
+
+  .timeline-column {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    width: 90%;
+    height: auto; /* let content dictate height */
+    padding: 1rem;
+  }
 }
 
   /* Tablet */
@@ -196,6 +233,7 @@ footer {
     font-size: 0.9em;
     margin: 10px;
   }
+    /* timeline */
   .timeline-container {
     flex-direction: column;
     align-items: center;
