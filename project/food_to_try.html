@@ -38,6 +38,17 @@
   <footer>
       Copyright &copy; 2025 Explore the World<br/><a
         href="tanner@mccurdy.com">tanner@mccurdy.com</a>
-    </footer>    
+    </footer> 
+
+<!-- JS for Nav Menu -->
+<script>
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('#navmain');
+
+navToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  navToggle.classList.toggle('active');
+});
+</script>
 
 </body>
