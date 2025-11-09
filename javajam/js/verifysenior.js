@@ -6,7 +6,7 @@ if (age >= 65) {
     document.getElementById('verify').style.color = 'red';
     document.getElementById('verify').style.fontVariantCaps = 'small-caps';
 } else {
-    output = "Enjoy being Old!"
+    output = "You're Young!"
 }
 
 document.getElementById("verify").innerHTML = output;
