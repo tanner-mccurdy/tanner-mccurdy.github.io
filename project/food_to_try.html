@@ -1,53 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vietnam</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vietnam</title>
 
-  <link rel="icon" href="flag.ico"/>
-  <link rel="stylesheet" href="project.css"/>
-  <link rel="stylesheet" href="print.css" media="print">
-
+<link rel="icon" href="flag.ico"/>
+<link rel="stylesheet" href="project.css"/>
+<link rel="stylesheet" href="print.css" media="print">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+/>
 </head>
+
+<div class="container-fluid py-4">
 <body>
 
-  <header>
-  <div class="logo">Logo</div>
-  <button class ="nav-toggle" aria-label="Toggle Navigation">
-    <span class="hamburger"></span>
-  </button>
-  <nav id ="navmain">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="timeline.html">Timeline</a></li>
-      <li><a href="places_to_visit.html">Places to Visit</a></li>
-      <li><a href="food_to_try.html">Food to Try</a></li>
-    </ul>
-  </nav>
+<header>
+<div class="logo">
+    <img src="images/logo.jpg" alt="My Logo">
+  </div>
+<button class ="nav-toggle" aria-label="Toggle Navigation">
+  <span class="hamburger"></span>
+</button>
+<nav id ="navmain">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="timeline.html">Timeline</a></li>
+    <li><a href="places_to_visit.html">Places to Visit</a></li>
+    <li><a href="food_to_try.html">Food to Try</a></li>
+  </ul>
+</nav>
 </header>
 
-  <section class="page-title">
-    <h1>Food to Try</h1>
-  </section>
-  
-  <div class="food cards">
+<section class="page-title">
+  <h1>Food to Try</h1>
+</section>
 
+<div class="food">
+  <div class = "row">
+  
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Pho.jpg" alt="Pho or Bowl of a broth soup"/>
+      <h2 class="card-header h3 text-bold">Pho</h2>
+      <div class ="card-body">
+        <p>Pho is a traditional Vietnamese noodle soup consisting of broth, rice noodles, herbs, and meat, usually beef or chicken. It is a popular street food in Vietnam and is often enjoyed for breakfast.</p>
+      </div>
+    </div>
   </div>
 
-  <footer>
-      Copyright &copy; 2025 Explore the World<br/><a
-        href="tanner@mccurdy.com">tanner@mccurdy.com</a>
-    </footer> 
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Banh Mi.jpg" alt="A Banh Mi or Vietnamese Sandwich"/>
+      <h2 class="card-header h3 text-bold">Banh Mi</h2>
+      <div class ="card-body">
+        <p>Banh Mi is a Vietnamese sandwich that combines a crispy baguette with savory ingredients such as grilled pork, pate, pickled vegetables, cilantro, and chili. It reflects the fusion of French and Vietnamese culinary influences.</p>
+      </div>
+    </div>
+  </div>
 
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Banh Bao.webp" alt="Banh Bao or Steamed Bun"/>
+      <h2 class="card-header h3 text-bold">Banh Bao</h2>
+      <div class ="card-body">
+        <p>Banh Bao is a steamed bun filled with a variety of ingredients, typically including pork, mushrooms, and quail eggs. It is a popular snack or breakfast item in Vietnam, known for its soft texture and flavorful filling.</p>
+      </div> 
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Buc Luc Lao.png" alt="Buc Luc Lao or Shaking Beef"/>
+      <h2 class="card-header h3 text-bold">Buc Luc Lao</h2>
+      <div class ="card-body">
+        <p>Buc Luc Lao is a traditional Vietnamese dish made with stir-fried beef and vegetables, often served with rice. It is known for its savory flavors and tender meat, making it a popular choice among locals and visitors alike.</p>
+      </div> 
+    </div>
+  </div>
+ 
+
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Chao Ga.png" alt="Chao Ga or Vietnamese Congee"/>
+      <h2 class="card-header h3 text-bold">Chao Ga</h2>
+      <div class ="card-body">
+        <p>Chao Ga is a Vietnamese rice porridge made with chicken, often flavored with ginger, garlic, and herbs. It is a comforting dish commonly eaten for breakfast or when feeling under the weather.</p>
+      </div>  
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Bun Cha.png" alt="Bun Cha or Vietnamese Meatballs"/>
+      <h2 class="card-header h3 text-bold">Bun Cha</h2>
+      <div class ="card-body">
+        <p>Bun Cha is a Vietnamese dish consisting of grilled pork served over a bed of rice noodles, accompanied by fresh herbs and a dipping sauce. It is a popular street food in Hanoi and is known for its flavorful combination of ingredients.</p>
+      </div>  
+   </div>
+</div>
+
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Goi Cuon.png" alt="Goi Cuon or Spring Roll"/>
+      <h2 class="card-header h3 text-bold">Goi Cuon</h2>
+      <div class ="card-body">
+        <p>Goi Cuon, also known as Vietnamese spring rolls or fresh spring rolls, are made with rice paper wrappers filled with a combination of shrimp, pork, vermicelli noodles, and fresh herbs. They are typically served with a dipping sauce and are a light and refreshing appetizer or snack.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Banh Xeo.png" alt="Banh Xeo or Vietnamese Pancake"/>
+      <h2 class="card-header h3 text-bold">Banh Xeo</h2>
+      <div class ="card-body">
+        <p>Banh Xeo is a Vietnamese savory pancake made from rice flour, turmeric, and coconut milk, filled with ingredients such as shrimp, pork, and bean sprouts. It is typically served with fresh herbs and a dipping sauce, offering a crispy texture and flavorful taste.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6 col-lg-4 d-flex">
+    <div class="card nav-card mb-3">
+      <img src="images/Cao Lau.png" alt="Cao Lau or Vietnamese Noodle Dish"/>
+      <h2 class="card-header h3 text-bold">Cao Lau</h2>
+      <div class ="card-body">
+        <p>Cao Lau is a traditional Vietnamese noodle dish originating from Hoi An. It features thick rice noodles, slices of pork, fresh herbs, and crispy croutons, all served in a small amount of flavorful broth. The dish is known for its unique texture and rich taste.</p>
+      </div>
+    </div>
+        
+
+</div>
+</div>
+
+
+<footer>
+    Copyright &copy; 2025 Explore the World<br/><a
+      href="tanner@mccurdy.com">tanner@mccurdy.com</a>
+  </footer> 
+</div>
 <!-- JS for Nav Menu -->
 <script>
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('#navmain');
 
 navToggle.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  navToggle.classList.toggle('active');
+nav.classList.toggle('active');
+navToggle.classList.toggle('active');
 });
 </script>
 

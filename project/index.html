@@ -8,11 +8,19 @@
 <link rel="icon" href="flag.ico"/>
 <link rel="stylesheet" href="project.css"/>
 <link rel="stylesheet" href="print.css" media="print">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+/>
 </head>
+
+<div class="container-fluid py-4">
 <body>
 
 <header>
-  <div class="logo">Logo</div>
+  <div class="logo">
+    <img src="images/logo.jpg" alt="My Logo">
+  </div>
   <button class ="nav-toggle" aria-label="Toggle Navigation">
     <span class="hamburger"></span>
   </button>
@@ -31,7 +39,7 @@
 </section>
 
 <div class="hero">
-  <img src="images/Vietnam.jpeg" alt="Beautiful View of Vietnam"/>
+  <img src="images/Vietnam.png" alt="Beautiful View of Vietnam"/>
 </div>
 
 <section class="overview">
@@ -40,14 +48,31 @@
     Vietnam, officially the Socialist Republic of Vietnam, is a country in Southeast Asia. It is known for its rich history, diverse culture, stunning landscapes, and delicious cuisine. From the bustling streets of Hanoi to the serene beaches of Da Nang, Vietnam offers a unique blend of tradition and modernity that captivates travelers from around the world.
   </p>
 </section>
-
+<div class="row align-items-center mb-4">
+<div class="col-4 text-center">
+<img src="images/VietnamMap.jpg" alt="Map of Vietnam" class="img-fluid"/>
+</div>
+<div class="col-8">
+    <div class="text-box text-center">
+      <h2>At A Glance</h2>
+      <p>
+        <strong>Capital:</strong> Hanoi<br/>
+        <strong>Population:</strong> Approximately 98 million (2024 estimate)<br/>
+        <strong>Language:</strong> Vietnamese<br/>
+        <strong>Currency:</strong> Vietnamese Dong (VND) = 0.000038 US Dollar<br/>
+        <strong>Climate:</strong> Tropical in the south, monsoonal in the north<br/>
+        <strong>Famous For:</strong> Pho, Banh Mi, Ha Long Bay, historical sites, and vibrant street markets<br/>
+      </p>
+    </div>
+  </div>
+</div>
 <footer>
     Copyright &copy; 2025 Explore the World<br/><a
       href="tanner@mccurdy.com"
       >tanner@mccurdy.com</a
     >
   </footer> 
-    
+</div>
 <!-- JS for Nav Menu -->
 <script>
 const navToggle = document.querySelector('.nav-toggle');
